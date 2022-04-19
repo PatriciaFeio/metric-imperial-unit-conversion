@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Patrícia Feio">
+        <title>Unit Converter</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="content-display">
+        <div class="content-wrapper">
+            <div class="content-value content-display">
+                <h1>Metric/Imperial unit conversion</h1>
+                <input id="userInput" aria-describedby="user-number-input" type="text">
+                <p id="content-value-top-paragraph" class="content-value-top-paragraph">Insert a number.</p>
+                <p id="content-value-bottom-paragraph" class="content-value-bottom-paragraph">Use a dot as a decimal separator.</p>
+            </div>
+            <div class="content-units content-display">
+                <div class="">
+                    <h2>Length (Meter/Feet)</h2>
+                    <p><span id="metricUserNumber"></span> meters = <span id="feetValue"></span> feet | <span id="imperialUserNumber"></span> feet = <span id="metersValue"></span> meters</p>
+                </div>
+                <div>
+                    <h2>Volume (Liters/Gallons)</h2>
+                    <p><span id="metricUserNumber"></span> liters = <span id="gallonsValue"></span> gallons | <span id="imperialUserNumber"></span> gallons = <span id="litersValue"></span> liters</p>
+                </div>
+                <div>
+                    <h2>Mass (Kilograms/Pounds)</h2>
+                    <p><span id="metricUserNumber"></span> kilos = <span id="poundsValue"></span> pounds | <span id="imperialUserNumber"></span> pounds = <span id="kilosValue"></span> kilos</p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>
